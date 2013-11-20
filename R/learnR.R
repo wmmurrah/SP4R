@@ -8,16 +8,15 @@
 # Created: 11/20/2013
 #**************************************************************************
 
-
-
-
-# Before we begin
+# Before we begin, and introduction by a famous educator:
 browseURL('http://www.youtube.com/watch?v=F1yPbaIcs30')
 # 
 # Let's take a tour of RStudio.
-# website: www.rstudio.org
-# 
-# 
+browseURL('http://www.rstudio.org')
+
+# CRAN 
+browseURL('http://cran.r-project.org/')
+
 
 
 # R as a calculator -------------------------------------------------------
