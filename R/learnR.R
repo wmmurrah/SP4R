@@ -27,7 +27,9 @@ browseURL('http://cran.r-project.org/')
 1 * 2
 2^2
 
-x <- 
+(1 + 2 + 3 + 4)/4
+
+matrix
 # Basic R graphcis --------------------------------------------------------
 
 
@@ -51,7 +53,7 @@ plot(mtcars$mpg,mtcars$disp,pch=20)
 
 # Cumulative probability of coin toss -------------------------------------
 
-N <- 10000
+N <- 1000
 x <- rbinom(n=N, 1, prob=.5)
 r <- cumsum(x)
 n <- 1:N
