@@ -10,12 +10,11 @@ plot(cumprob,ylim=c(0.0, 1.0),pch=20,type="b",log='x',
      xlab="coin toss number",
      ylab="cumulative proportion of heads")
 abline(h=0.5,col="red")
-head(x,25)
-head(cumprob,25)
+return(head(x,25))
+return(head(cumprob,25))
 
-
-tail(x,25)
-tail(cumprob,25)
+return(tail(x,25))
+return(tail(cumprob,25))
 }
 
 
