@@ -1,0 +1,5 @@
+\frametitle {How is R different from other software?}
+  \begin{itemize}
+    \item<+-| alert@+> {R is FREE (as in free beer and free speech)}
+    \item<+-| alert@+> R is an Object-Oriented not Procedural language
+  \end{itemize}

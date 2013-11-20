@@ -1,0 +1,174 @@
+\documentclass{beamer}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+\usetheme{uva}
+
+%\documentclass[handout,xcolor=pdftex,dvipsnames,table]{beamer}
+
+% logo of my university
+\titlegraphic{\includegraphics[width=4cm]{figs/castlMain.png}%\hspace*{-6cm}~%
+\hfill%
+\includegraphics[width=4cm]{figs/FOCAL-logo-full-orange.png}%\hspace*{6cm}~%
+}
+
+\title [SP4R: Intro] {Statistical Programing and Reproducible Research with \textbf{R} in \textbf{RStudio} \\ {A Brief Introduction}
+} 
+\author{William "Hank" Murrah}
+%\institute [FOCAL]{FOCAL Research Group}
+\date{November 22, 2013}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
+\begin{document}
+
+\maketitle
+% \frame{\titlepage}
+% 
+
+% video
+\begin{frame}
+\frametitle{Introduction to R by a familiar face}
+
+\myurlshort{http://www.youtube.com/watch?v=F1yPbaIcs30}
+
+
+
+\end{frame}
+
+% \section{Overview}
+\begin{frame}
+  \frametitle{What is R?}
+  \begin{quote}R is a language and environment for statistical computing and graphics. It is a GNU project which is similar to the S language and environment which was developed at Bell Laboratories (formerly AT\&T, now Lucent Technologies) by John Chambers and colleagues...
+	\end{quote}
+	\pause
+	\begin{quote}
+	R provides a wide variety of statistical (linear and non linear modeling, classical statistical tests, time-series analysis, classifcation, clustering, ...) and graphical techniques, and is highly extensible. The S language is often the vehicle of choice for research in statistical methodology, and R provides an Open Source route to participation in that activity.
+	(R-project.org)
+	\end{quote}
+\end{frame}
+  
+\begin{frame}[fragile]
+	\frametitle{Pros}
+	\begin{itemize}
+	\item<+-| alert@+> FREE!
+	\textit{	R is FREE and open source}
+	\item<+-| alert@+> Available for multiple platforms (i.e. Windows, Mac, Linux).
+	\item<+-| alert@+> Easily extensible with (currently) over 5,000 packages listed on CRAN.
+	\item<+-| alert@+> Scriptable.
+	\item<+-| alert@+> Publication quality graphics.
+	\item<+-| alert@+> Turing complete language.
+	\item<+-| alert@+> Quickly becoming the de facto standard among statistician.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Cons}
+	\begin{itemize}
+		\item<+-| alert@+> Has a steeper learning curve.
+		\item<+-| alert@+> Multiple ways of doing the same thing.
+		\item<+-| alert@+> Can have difficulty with \textit{very} large datasets.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{How is R different from other software?}
+  \begin{itemize}
+    \item<+-| alert@+> {R is FREE (as in free beer and free speech)}
+    \item<+-| alert@+> R is an Object-Oriented not Procedural language
+  \end{itemize}  
+\end{frame}
+
+\begin{frame}[c]
+	\frametitle{R's Roots... S}
+	\begin{itemize}
+	\item S is a language that was developed by John Chambers and others at Bell Labs.
+	\item S was initiated in 1976 as an internal statistical analysis environment - originally implemented as Fortran libraries.
+	\item Early versions of the language did not contain functions for statistical modeling.
+	\item In 1988 the system was rewritten in C and began to resemble the system that we have today (this was Version 3 of the language). The book Statistical Models in S by Chambers and Hastie (the blue book) documents the statistical analysis functionality.
+	\item Version 4 of the S language was released in 1998 and is the version we use today. The book Programming with Data by John Chambers (the green book) documents this version of the language.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+	\frametitle{History of S}
+	\begin{itemize}
+	\item In 1993 Bell Labs gave StatSci (now Insightful Corp.) an exclusive license to develop and sell the S language.
+	\item In 2004 Insightful purchased the S language from Lucent for \$2 million and is the current owner.
+	\item In 2006, Alcatel purchased Lucent Technologies and is now called Alcatel-Lucent.
+	\item Insightful sells its implementation of the S language under the product name S-PLUS and has built a number of fancy features (GUIs, mostly) on top of it-hence the "PLUS".
+	\item In 2008 Insightful is acquired by TIBCO for \$25 million; future of S-PLUS is uncertain.
+	\item The S language itself has not changed dramatically since 1998.
+	\item In 1998, S won the Association for Computing Machinery's Software System Award.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[c]
+In "Stages in the Evolution of S", John Chambers writes:
+\begin{quote}
+"[W]e wanted users to be able to begin in an interactive environment, where they did not consciously think of themselves as programming. Then as their needs became clearer and their sophistication increased, they should be able to slide gradually into programming, when the language and system aspects would become more important."
+\end{quote}
+http://www.stat.bell-labs.com/S/history.html
+\end{frame}
+
+\begin{frame}[c]
+	\frametitle{History of R}
+	\begin{itemize}
+	\item 1991: Created in New Zealand by Ross Ihaka and Robert Gentleman. Their experience developing R is documented in a 1996 JCGS paper.
+	\item 1993: First announcement of R to the public.
+	\item 1995: Martin Machler convinces Ross and Robert to use the GNU General Public License to make R free software.
+	\item 1996: A public mailing list is created (R-help and R-devel)
+	\item 1997: The R Core Group is formed (containing some people associated with S-PLUS). The core group controls the source code for R.
+	\item 2000: R version 1.0.0 is released.
+	\item 2012: R version 3.0.2 is released on September 9, 2013.
+	\item There are now over 5,000 packages listed on CRAN. 
+	\end{itemize}
+\end{frame}
+
+
+\end{document}
