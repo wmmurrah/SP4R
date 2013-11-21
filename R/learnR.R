@@ -17,8 +17,6 @@ browseURL('http://www.rstudio.org')
 # CRAN 
 browseURL('http://cran.r-project.org/')
 
-
-
 # R as a calculator -------------------------------------------------------
 
 # basic math
@@ -29,9 +27,7 @@ browseURL('http://cran.r-project.org/')
 
 (1 + 2 + 3 + 4)/4
 
-matrix
 # Basic R graphcis --------------------------------------------------------
-
 
 x <- 1:100
 
@@ -40,39 +36,59 @@ y <- x^2
 plot(x, y)
 
 data(mtcars)
-
+str(mtcars)
+plot(mtcars$mpg, mtcars$disp)
 library(ggplot2)
 qplot(mpg,disp, data=mtcars)
 plot(mtcars$mpg,mtcars$disp,pch=20)
 
+####*******************************************************************####
 
-# R is a functional language ----------------------------------------------
+# R is an object-oriented functional language -----------------------------
 
 
+# assignment operator
+x  <- 1:100
+1:50 -> y
+# assignment shortcut in RStudio is alt + '-'
 
+# functions:
+y   <- sqrt(x)
+plot(x,y)
+cor.xy <- cor(x,y)
+cor.xy
 
+mod <- lm(y ~ x)
+summary(mod)
+
+library(texreg)
+screenreg(mod)
+
+# Let's build our own function!
 # Cumulative probability of coin toss -------------------------------------
 
-N <- 1000
-x <- rbinom(n=N, 1, prob=.5)
+N <- 500
+x <- rbinom(n=N, 1, prob=0.50)
 r <- cumsum(x)
 n <- 1:N
 
 cumprob <- r/n
 
-plot(cumprob, ylim=c(0.0, 1.0), pch=20, type="l")
+plot(cumprob)
+
+plot(cumprob, ylim=c(0.0, 1.0),type="b", pch=20)
 abline(h=0.5)
 
 
 N <- 500
-p=0.5
+p=0.50
 x <- rbinom(n=N,1,prob=p)
 r <- cumsum(x)
 n <- 1:N
 
 cumprob <- r/n
 
-plot(cumprob,ylim=c(0.0, 1.0),pch=20,type="l",
+plot(cumprob,ylim=c(0.0, 1.0),type="l",
      main="Cumulative proportion heads",
      xlab="coin toss number",
      ylab="cumulative proportion")
