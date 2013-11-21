@@ -1,6 +1,6 @@
 
 
-cumprop <- function(N, p= 0.5) {
+cumprop <- function(N, p= 0.50) {
   # function to plot the cumulative proportion of
   # heads for a series of coin tosses.
 x <- rbinom(n=N,1,prob=p)

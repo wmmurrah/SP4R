@@ -27,6 +27,45 @@ browseURL('http://cran.r-project.org/')
 
 (1 + 2 + 3 + 4)/4
 
+# assignment operators
+x  <- 1:100
+x2 = 1:200   # Don't use this!
+1:50 -> y
+1:50 = y     # this doesn't work
+
+# assignment shortcut in RStudio is alt + '-' (adds spaces)
+x <- 
+
+# Data frames -------------------------------------------------------------
+
+# what data frames are "in" R?
+data()
+# manually enter data:
+dat <- data.frame(x=c(1,4,6,4,7,8,4,7,5,3),
+                  y=c(1:10),
+                  pet.names=c("rover","max","bob","trooper","rosco",
+                      "whiskers","snook","thor","zeus","diamond"))
+# open data "in" R
+data(mtcars)
+
+# explore data
+summary(mtcars)
+str(mtcars)
+
+# import data from the web:
+# Andrew Gelman's website
+browseURL("http://www.stat.columbia.edu/~gelman/book/")
+
+football <- read.table(file="http://www.stat.columbia.edu/~gelman/book/data/football.asc",
+                       header=T,
+                       skip=7)
+summary(football)
+str(football)
+# our first package
+install.packages('psych')
+library('psych')
+describe(football)
+
 # Basic R graphcis --------------------------------------------------------
 
 x <- 1:100
@@ -35,8 +74,7 @@ y <- x^2
 
 plot(x, y)
 
-data(mtcars)
-str(mtcars)
+
 plot(mtcars$mpg, mtcars$disp)
 library(ggplot2)
 qplot(mpg,disp, data=mtcars)
@@ -46,21 +84,25 @@ plot(mtcars$mpg,mtcars$disp,pch=20)
 
 # R is an object-oriented functional language -----------------------------
 
-
-# assignment operator
-x  <- 1:100
-1:50 -> y
-# assignment shortcut in RStudio is alt + '-'
-
 # functions:
-y   <- sqrt(x)
+a <- 1:100
+b <- sqrt(a)
+plot(a,b)
+
+x <- rnorm(100,50,8)
+y <- rnorm(n=100,mean=50,sd=8)
+hist(x)
+hist(y)
 plot(x,y)
-cor.xy <- cor(x,y)
-cor.xy
+y <- x + rnorm(100,0,8)
+plot(x,y)
+
 
 mod <- lm(y ~ x)
 summary(mod)
+plot(mod)
 
+install.packages('texreg')
 library(texreg)
 screenreg(mod)
 
@@ -72,31 +114,16 @@ x <- rbinom(n=N, 1, prob=0.50)
 r <- cumsum(x)
 n <- 1:N
 
-cumprob <- r/n
+cumprop <- r/n
 
-plot(cumprob)
+plot(cumprop)
 
-plot(cumprob, ylim=c(0.0, 1.0),type="b", pch=20)
+plot(cumprop, ylim=c(0.0, 1.0), pch=20)
 abline(h=0.5)
 
-
-N <- 500
-p=0.50
-x <- rbinom(n=N,1,prob=p)
-r <- cumsum(x)
-n <- 1:N
-
-cumprob <- r/n
-
-plot(cumprob,ylim=c(0.0, 1.0),type="l",
-     main="Cumulative proportion heads",
-     xlab="coin toss number",
-     ylab="cumulative proportion")
-abline(h=0.5,col="red")
-
-head(cumprob,25)
-tail(cumprob,25)
-
+# function.name <- function(argument1, argument2 = default){
+#   write function here
+# }
 
 
 # Getting Help in R -------------------------------------------------------

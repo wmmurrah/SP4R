@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.2.24)  17 NOV 2013 14:52
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.2.24)  21 NOV 2013 11:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -883,17 +883,6 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <4> not available
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figs/castlMain.png> <./f
 igs/FOCAL-logo-full-orange.png>]
-! Undefined control sequence.
-\beamer@doifinframe ...iar face} \par \myurlshort 
-                                                  {http://www.youtube.com/wa...
-l.82 \end{frame}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 [2
 
 ]
@@ -982,10 +971,10 @@ Package rerunfilecheck Info: File `learnRpres.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
  ) 
 Here is how much of TeX's memory you used:
- 15643 strings out of 493493
- 289252 string characters out of 3143797
+ 15642 strings out of 493493
+ 289242 string characters out of 3143797
  368274 words of memory out of 3000000
- 18497 multiletter control sequences out of 15000+200000
+ 18496 multiletter control sequences out of 15000+200000
  22535 words of font info for 51 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,16n,53p,464b,550s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -994,7 +983,7 @@ e/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/helvetic/uhvro8a.pfb>
-Output written on learnRpres.pdf (20 pages, 238047 bytes).
+Output written on learnRpres.pdf (20 pages, 237939 bytes).
 PDF statistics:
  577 PDF objects out of 1000 (max. 8388607)
  536 compressed objects within 6 object streams

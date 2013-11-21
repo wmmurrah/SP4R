@@ -25,7 +25,7 @@
 \begin{frame}
 \frametitle{Introduction to R by a familiar face}
 
-\myurlshort{http://www.youtube.com/watch?v=F1yPbaIcs30}
+
 
 
 
@@ -70,7 +70,7 @@
   \frametitle{How is R different from other software?}
   \begin{itemize}
     \item<+-| alert@+> {R is FREE (as in free beer and free speech)}
-    \item<+-| alert@+> R is an Object-Oriented not Procedural language
+    \item<+-| alert@+> R is an Object-Oriented language not a Procedural program
   \end{itemize}  
 \end{frame}
 
@@ -115,7 +115,7 @@ http://www.stat.bell-labs.com/S/history.html
 	\item 1996: A public mailing list is created (R-help and R-devel)
 	\item 1997: The R Core Group is formed (containing some people associated with S-PLUS). The core group controls the source code for R.
 	\item 2000: R version 1.0.0 is released.
-	\item 2012: R version 3.0.2 is released on September 9, 2013.
+	\item 2013: R version 3.0.2 is released on September 9.
 	\item There are now over 5,000 packages listed on CRAN. 
 	\end{itemize}
 \end{frame}
