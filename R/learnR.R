@@ -19,8 +19,8 @@ browseURL('http://cran.r-project.org/')
 
 # R as a calculator -------------------------------------------------------
 
-# basic math
-1 + 1
+# basic math 
+1 + 1 # run with PC/Linux: Ctrl + enter; Mac: Cmd + enter.
 2 - 1
 1 * 2
 2^2
@@ -29,22 +29,27 @@ browseURL('http://cran.r-project.org/')
 
 # assignment operators
 x  <- 1:100
-x2 = 1:200   # Don't use this!
-1:50 -> y
-1:50 = y     # this doesn't work
 
-# assignment shortcut in RStudio is alt + '-' (adds spaces)
+x2 = 1:200   # Don't use this!
+
+
+# assignment shortcut in RStudio is alt + '-' (adds spaces too)
 x <- 
+
+# Vector and matrices --------------------------------------------
+
+x <- c(1,2,3,4,5,6,7,8,9,10) # c stands for concatenate (or combine)
+mat <- matrix(c(1,2,3,4,5,6,7,8,9,10),nrow=2)
 
 # Data frames -------------------------------------------------------------
 
-# what data frames are "in" R?
-data()
 # manually enter data:
 dat <- data.frame(x=c(1,4,6,4,7,8,4,7,5,3),
                   y=c(1:10),
                   pet.names=c("rover","max","bob","trooper","rosco",
                       "whiskers","snook","thor","zeus","diamond"))
+# what data frames are "in" R?
+data()
 # open data "in" R
 data(mtcars)
 
@@ -62,9 +67,13 @@ football <- read.table(file="http://www.stat.columbia.edu/~gelman/book/data/foot
 summary(football)
 str(football)
 # our first package
+# packages extent the functionality of Base R
 install.packages('psych')
 library('psych')
 describe(football)
+
+#### CRAN Task Views
+browseURL("http://cran.r-project.org/web/views/")
 
 # Basic R graphcis --------------------------------------------------------
 
@@ -89,9 +98,9 @@ a <- 1:100
 b <- sqrt(a)
 plot(a,b)
 
-x <- rnorm(100,50,8)
-y <- rnorm(n=100,mean=50,sd=8)
+x <- rnorm(n=100,mean=50,sd=8)
 hist(x)
+y <- rnorm(100,50,8)
 hist(y)
 plot(x,y)
 y <- x + rnorm(100,0,8)
