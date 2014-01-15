@@ -1,0 +1,428 @@
+% Preview source code
+
+%% LyX 2.0.6 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[american]{article}
+\usepackage{ae,aecompl}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1.25in,bmargin=1.25in,lmargin=1.25in,rmargin=1.25in}
+\usepackage{array}
+\usepackage{amstext}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\newcommand{\noun}[1]{\textsc{#1}}
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{framed}
+\usepackage{html}
+ \usepackage{url}
+ \latex{\renewcommand{\htmladdnormallink}[2]{#1 (\url{#2})}}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\section*{Chemistry 11 -- Inorganic, Organic and Biochemistry}
+
+\vspace{0.3cm}
+
+
+\begin{center}
+\begin{tabular}{m{2in}ll>{\raggedright}m{3in}}
+Spring, 2005 &  &  & Dr. Kenward Vaughan\tabularnewline
+CRN 31005 / 31006 &  &  & Office location: SE--26 (395--4243 or 4224)\tabularnewline
+\textbf{Class times:} &  &  & \textbf{email:} kvaughan@bc.cc.ca.us\tabularnewline
+MW:~9:35--11~am~(lec.~both), TTh:~7:55--11:00~am~(lab~..05),
+TTh:~12:50--3:57~pm~(lab~..06) &  &  & \textbf{Office hours:} \\
+MW:~11--12:30, TTh:~11:00--12:00\tabularnewline
+ &  &  & My BC home page is at\\
+\tabularnewline
+\end{tabular}
+\par\end{center}
+
+\vspace{0.3cm}
+
+
+
+\section{Course Description}
+
+
+\subsection{BC's catalog description:}
+
+
+\paragraph{Principles of Inorganic, Organic and Biochemistry (5 units):}
+
+A systematic study of the principles of inorganic, organic and biochemistry
+using a qualitative and quantitative approach. Topics include physical
+principles of chemistry; inorganic compounds and reactions; a survey
+of organic chemistry---classification, compounds, reactions, nomenclature;
+biochemistry---classification, composition, reactions in living organisms.
+\textbf{Prerequisite:} MATH BA with a grade of C or equivalent. Reading
+Level 5 or 6. Hours: 54 lect, 72 lab. CCS: Liberal Arts and Sciences.
+Transferable: CSU and private colleges. 
+\begin{quote}
+\begin{framed}Students with disabilities who believe they may need
+accommodations in this class are encouraged to contact Supportive
+Services in FACE 16, 395-4334, as soon as possible to better ensure
+such accommodations are implemented in a timely fashion.\end{framed}
+\end{quote}
+
+\subsection{Texts and Materials}
+\begin{itemize}
+\item Bettelheim, Brown, and March, ``Introduction to General, Organic,
+and Biochemistry'' (7$^{\textrm{th}}$ ed., Brooks/Cole)
+\item Study guide which accompanies the text, if it helps you.
+\item Timberlake, ``Chemistry, An Introduction to General, Organic, and
+Biological Chemistry, \textbf{Essential laboratory manual}'' (8$^{\textrm{th}}$
+ed., Benjamin Cummings)
+\item Combination lock, lab apron, and bookstore--brand fully enclosed goggles
+(\textbf{an absolute must!}).
+\end{itemize}
+
+\section{Learning outcomes you are expected to achieve}
+
+Chemistry 11 students are expected to show some proficiency in the
+following by the end of the course.
+
+\newpage{}
+\begin{enumerate}
+\item They should recognize the interwoven nature of matter and energy,
+in particular the role that energy plays in guiding matter's behavior.%
+\footnote{It is important to learn that chemistry is a cumulative subject. Ideas
+you hear the first day about energy and matter will be on the final
+exam, despite the fact that the exam is not comprehensive. 
+
+This also means that these outcomes apply to all areas we will encounter
+in our studies, whether we are speaking about salt in water or large
+proteins in cells.%
+}
+
+\begin{quotation}
+Throughout the course, students will be asked to explain various phenomena.
+Their answers will require relating the material changes occurring
+in those phenomena to the potential/kinetic energy changes of the
+system. 
+
+Homework, quizzes, and exam problems will address this.
+\end{quotation}
+
+\item They should acquire a fundamental knowledge of the building blocks
+of matter (subatomic particles and atoms) and why/how atoms bond together
+to form larger structures (molecules).
+
+\begin{quotation}
+Students will be asked to identify subatomic particles \emph{via}
+their properties, atoms \emph{via} their subatomic particle composition,
+bond types \emph{via} comparison of the involved atoms' electronegativities,
+and the shapes of the simpler molecular combinations based on a simple
+theory (VSEPR). 
+
+Labs, quizzes, homework, and exams will be the medium for this assessment.
+\end{quotation}
+
+\item They should present an understanding of how these molecules interact
+with one another and what influence this has on what we see macroscopically.
+
+\begin{quotation}
+Students should demonstrate knowledge of the basis for intermolecular
+interactions (like/opposite charges), the existence of apparent charge
+in molecules (prediction of polarity and the nature of electron clouds),
+and the different levels of interactions possible (e.g. London forces
+vs. hydrogen bonds). They should be able to predict various observed
+properties for materials based on their understanding of these concepts
+(e.g. solubility or vapor pressure).
+
+Assessments will include questions on homework and exam problems,
+and lab exercises working with models to predict both what interactions
+are possible, and molecular (dis)similarity between different substances
+(e.g. the relationship between acetylcholine and nerve agents).
+\end{quotation}
+
+\item They should recognize what constitutes physical and chemical change.
+
+\begin{quotation}
+This will be assessed by classification of phenomena through direct
+observation or from a description, and also by the student defining
+these changes at the molecular level.
+\end{quotation}
+\item They should be able to characterize/identify several standard, ubiquitous
+chemical systems and behaviors. 
+
+\begin{quotation}
+A few examples are electrolytes, buffers, equilibria, and osmosis.
+These form a framework for later learning in the biological sciences. 
+
+Assessments for these will come in labs, quizzes, homework, and exams.
+\end{quotation}
+\item They should be able to characterize/identify several standard, ubiquitous
+chemical changes.
+
+\begin{quotation}
+Oxidation/reduction reactions, acid/base reactions, condensation--dehydration
+reactions, hydrolyses reactions, and addition reactions are examples
+of ones frequently encountered in biochemistry. 
+
+Students will find practice and assessment of this outcome in all
+areas of their work.
+\end{quotation}
+\end{enumerate}
+A number of specific (but older) objectives exist for the areas we
+will study (see my website); these can serve as one of the guides
+you should use in gaining these proficiencies. Do understand that
+assessing these outcomes is an ongoing process in the classroom which
+extends beyond any given chapter test!
+
+
+\section{Attendance and Grading}
+
+You are expected to attend all classes and all labs in their entirety.
+The general attendance policy for BC will be followed. This translates
+to a probable drop if you miss more than 18 hours of class total or
+2 weeks of lecture. 
+
+
+\subsection{Absences\label{Absences}}
+
+If you should be absent for unavoidable reasons, you \textbf{\noun{must}}
+check with me before I will consider allowing \textbf{\emph{any}}
+make--up work. This includes tests, laboratory work, and announced
+quizzes. Lab reports will not count if you are absent from that lab.
+
+
+\subsection{Withdrawals}
+
+If you decide to discontinue the course for ANY reason, please make
+an \textbf{\emph{official}} withdrawal. If you fail to officially
+withdraw from a class which you are no longer attending, you may receive
+an \textbf{F} on your permanent transcript. The Bakersfield College
+catalog says:
+\begin{quote}
+Students are responsible for officially withdrawing from any class
+or classes in which they no longer wish to be enrolled. Non-attendance
+does not release the student from this responsibility.
+\end{quote}
+In addition,
+\begin{quote}
+Students who find it necessary to withdraw from the college are required
+to return check-out supplies (chemistry lab drawer) and pay all fines
+and debts (chemistry stockroom) owed the college.
+\end{quote}
+\textbf{If you fail to check out} of your lab locker when you stop
+coming to class, you may be charged for their having to check the
+drawer out for you. If you owe money to the chemistry stockroom, you
+will be ineligible for future class registrations at BC until you
+settle the account with the stockroom.
+
+
+\subsection{Assessments and grades}
+
+
+\subsubsection{General policies}
+
+My policy concerning late work is as follows: 
+\begin{quotation}
+Up to one period late: 70\% of grade awarded (e.g. an $\textrm{A}-$
+becomes a C$+$).
+
+Two periods late: 35\% of grade awarded (e.g. an $\textrm{A}-$ becomes
+a D ).
+
+Later than that: Forget it!
+\end{quotation}
+There are no make--ups for missed unannounced quizzes/assignments.
+
+Unless otherwise noted, lab reports are due at the beginning of the
+second lab period following the last day we actually work on the lab
+in class. For example, if we do an experiment on a Thursday, those
+reports will be due the next Thursday (in a TTh lab).
+
+
+\subsubsection{Tests and other non--lab activities}
+
+There should be three major exams during the course. These exams are
+expected to be mostly multiple choice, short answer, and matching--type
+questions. You should expect to encounter a range of difficulties
+in these questions. Some practice exams will be made available.
+
+Various quizzes and assignments will appear throughout the course. 
+
+
+\subsubsection{Labs}
+
+The reports will be graded and returned as quickly as possible to
+you. Worksheets will accompany some labs. These worksheets will due
+before you leave the laboratory on the day of the experiment.
+
+
+\subsubsection*{The grading of labs/homework}
+
+We will have a large number of labs, quizzes, and homework. This makes
+a full assessment of every paper from every student nearly impossible.
+So I use a modified system which works as follows.
+
+Approximately 50\% of all labs assessed will be ``fully'' graded
+using the rubric I have available on my website (http://www2.bc.cc.ca.us/kvaughan/).
+Which labs are graded will \emph{not} be announced ahead of time,
+for obvious reasons. The average of these graded labs forms the basis
+for all other report grades.
+
+Other labs will initially be credited with either this average grade
+or an average C (whichever is higher). They then will be assessed
+using a less rigorous guide: is the lab \emph{complete} (required
+parts answered)? is the work merely cursory in nature or did the student
+put some obvious effort into it? are the answers to a few select questions
+appropriate and/or totally correct? The credited grade will be adjusted
+up or down by as much as 1 grade under normal circumstances, but extreme
+cases may lead to further adjustment (e.g. no lab equals a zero).
+
+There are several labs which I never grade (ones which are ``purely
+experiential'').
+
+Do remember that lab reports won't count if you aren't there to do
+the work!
+
+
+\subsubsection{The final}
+
+\textbf{The final is mandatory.} You must take it to \textbf{\noun{successfully}}
+pass the course \emph{regardless of prior work}. 
+
+The final is essentially a fourth test. The lowest of the four grades
+will be replaced with the next one up (if there is a tie for last,
+only one will get shifted up). Suppose you earn a B$+$, a B, a C$+$,
+and a D$-$ (bad hair day?). The D$-$ will get replaced by the C$+$
+at the end of the semester. Your exam average would change from a
+C$+$ to a B$-$. I expect this will help a number of people! 
+
+There is no practice exam for the final.
+
+Did I remember to say that the final is mandatory?
+
+
+\subsubsection{Grading scale}
+
+Grades are assigned as a modified GPA score. It's not hard to understand,
+and will be discussed the first day of class. The GPA scale used within
+this class is F: 0.00--0.99, D: 1.00--1.99, C: 2.00--2.99, B: 3.00--3.99,
+and A: 4.00--5.00. So if you see a 2.50 on your test, you received
+an average C.
+
+The approximate formula for one's grade is as follows:
+\begin{eqnarray*}
+\textrm{GPA} & = & (0.50\times\textrm{GPA}_{tests+final})+(0.30\times\textrm{GPA}_{lab})+(0.05\times\textrm{GPA}_{quizzes})+(0.15\times\textrm{GPA}_{HW})
+\end{eqnarray*}
+
+
+Each part of your grade shown above is an average of all your work
+in that area. For example, your GPA$_{lab}$ is an average of what
+you get on all lab reports. 
+
+Did I remember to say that the final is mandatory?
+
+
+\subsubsection{Cheating and other forms of dishonesty}
+
+\textbf{I have no tolerance for cheating in any form. Such will earn
+the student an automatic zero. }
+
+
+\section{Help for the needy}
+
+I am primarily interested in helping you to understand and learn a
+subject which is both complicated and important for people heading
+into the allied health fields. Don't be surprised to hear me egging
+you on to be prepared for classes, to study harder for exams, and
+to learn how to study. I do not bite and my bark is pretty minimal,
+so I hope dearly that you all ask questions and attend some office
+hours. Please come by if you need help!
+
+Additionally, BC does have tutoring services as well as a series of
+study--skills classes \emph{every} semester. I \textbf{\noun{strongly}}
+recommend that every student go to the classes, and seek out a tutor
+if needed. Don't let pride or anxiety keep you out of these classes.\@.\@.
+Problems you may have will only get worse as the semester goes on
+if you \textbf{don't} get the help when it's available.
+
+I cannot overemphasize how helpful these skills classes can be for
+everyone!
+
+
+\section{Computer use}
+
+You definitely should get a computer account at BC. \textbf{It costs
+nothing} and is very easy to acquire. Head over to the library and
+go downstairs into the computer commons area. Go catty-corner to the
+farthest kiosk, and use one of the computers there to set up your
+account. Someone will be there to help you if needed.
+
+Like many other BC instructors, I now have very few handouts for class
+because of the budget issues we face. Nearly all of what I provide
+the class is through the Internet on my home page (\url{http://www2.bc.cc.ca.us/kvaughan}).
+Homework, announcements, changes in plans, etc., are all placed there,
+often before I say them in class. \textbf{All practice exams are made
+available solely off of my web site.} Having a school account gives
+you access to that information while you are here. For a lot of people,
+it is the only access available except through the local libraries.
+
+Additionally, there are actually some good things to be found on the
+Internet (somewhere in the morass of junk...), and some of our work
+will involve your heading out there. If you have an account, you also
+can work anywhere on campus and be able to access your saved work
+from any other place on campus. If you have Internet access at home,
+then you can send your work home via email. No more floppies to carry
+around!
+
+\newpage{}
+
+
+\section{Class Calendar}
+
+Coverage of lecture topics will proceed at the approximate rate of
+one chapter every $4\frac{3}{8}$ days. The following schedule is
+tentative; it is recognized that this is subject to change as circumstances
+dictate. The labs, in particular, are undergoing revision. Please
+keep yourself updated by visiting the web site and noting the assignments
+for each week!
+
+
+\subsubsection*{Schedule for Dr. Vaughan's chem 11 class, Spring, 2005}
+
+\vspace{0.3cm}
+
+
+\begin{center}
+\begin{tabular}{lllllll}
+ & Week &  & Lecture &  & Labs & Notes\tabularnewline
+\hline 
+ & 1/24 &  & Chapter 1 &  & Exp. \#??, 2$+3$ & 1st lab = check-in, safety rules, etc.\tabularnewline
+ & 1/31 &  & 1, 2 &  & 2$+$3, H1 & H1=O$^{3}$\tabularnewline
+ & 2/7 &  & 2, 3 &  & 4, 6 & 2/4 = last day to withdraw, no W\tabularnewline
+ & 2/14 &  & 3, 4 &  & H2, 7 & H2=vap. P with structural studies\tabularnewline
+5 & 2/21 &  & 4 &  & 8, H2 (cont.) & holiday Monday\tabularnewline
+ & 2/28 &  & 5 &  & exam 1 (ch. 1$-$4), H3 & H3=equilibria\tabularnewline
+ & 3/7 &  & 6 &  & H3, 14 & \tabularnewline
+ & 3/14 &  & 8 &  & 15, H4 & H4=buffers\tabularnewline
+ & 3/21 &  &  &  &  & Spring break! ~~:-)\tabularnewline
+ & 3/28 &  & 10$-$13 &  & exam 2 (5$-$8), 16 & \tabularnewline
+10 & 4/4 &  & 14, 17 &  & 17 & 4/8 = last day to withdraw with W\tabularnewline
+ & 4/11 &  & 15 &  & 19 & \tabularnewline
+ & 4/18 &  & 16, 18, 19, 20 &  & 18, 20 or 21 & \tabularnewline
+ & 4/25 &  & 21, 22, 23 &  & 23 (or equiv.), exam 3 (10$-$18) & \tabularnewline
+ & 5/2 &  & 26, 27 &  & 24, computer lab & \tabularnewline
+15 & 5/9 &  & 24, 25 &  & computer lab, check$-$out & check--out in lab on last day\tabularnewline
+ & 5/16 &  &  &  & Final exams & \tabularnewline
+\end{tabular}
+\par\end{center}
+
+\vspace{0.3cm}
+
+
+Did I remember to say that the final is mandatory?
+\end{document}
